@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.jymj.zhglxt.ui.activity.me.address.DzglActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv_act_dzgl_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:padding="10dp"
+            android:paddingLeft="12dp"
+            android:src="@drawable/back_left_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="7dp"
+            android:text="地址管理"
+            android:textColor="#333333"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#F3F5FA" />
+
+    <include
+        android:visibility="gone"
+        layout="@layout/include_dzgl_null"
+        android:id="@+id/include_dzfl_null"/>
+
+    <RelativeLayout
+        android:descendantFocusability="blocksDescendants"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:background="#F3F5FA"
+        android:layout_height="0dp">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rlv_act_dzgl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <Button
+            android:id="@+id/bt_act_dzgl_add"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:text="新增地址"
+            android:textColor="@color/white"
+            android:layout_marginLeft="47dp"
+            android:layout_marginRight="47dp"
+            android:background="@drawable/bt_actiive_determine"
+            />
+    </LinearLayout>
+</LinearLayout>

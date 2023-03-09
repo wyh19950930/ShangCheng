@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/item_tab1"
+        android:title="首页"
+        android:icon="@drawable/shou_xuan"/>
+
+    <item
+        android:id="@+id/item_tab2"
+        android:title="购物车"
+        android:icon="@drawable/gwc_xuan"/>
+
+    <item
+        android:id="@+id/item_tabthree"
+        android:title="我的"
+        android:icon="@drawable/me_xuan"/>
+
+    <!--<item
+        android:id="@+id/item_tab3"
+        android:title="我的"
+        android:icon="@drawable/person_gray"/>-->
+
+</menu>

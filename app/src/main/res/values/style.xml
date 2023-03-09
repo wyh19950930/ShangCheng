@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+    <!--普通dialog-->
+    <style name="CustomProgressDialog" parent="@style/CustomDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="CustomCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/rememberpassword_selector</item>
+    </style>
+
+    <style name="DayTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/night_one_text_color</item>
+
+    </style>
+    <!--夜间主题-->
+    <style name="NightTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/night_backgroup_color</item>
+        <item name="colorPrimaryDark">@color/night_backgroup_color</item>
+        <item name="colorAccent">@color/night_backgroup_color</item>
+
+    </style>
+
+    <style name="anim_popu_zoom">
+        <item name="android:windowEnterAnimation">@anim/popu_zoomin</item>
+        <item name="android:windowExitAnimation">@anim/popu_zoomout</item>
+    </style>
+<!--边框-->
+    <style name="table_title_textview">
+        <item name="android:ellipsize">end</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/shape_list_table_title</item>
+    </style>
+    <style name="competent_text">
+        <item name="android:layout_gravity">center_vertical</item>
+        <!--        @dimen/sp_16-->
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="blue_check_box" parent="android:Widget.CompoundButton.CheckBox">
+        <item name="android:background">@drawable/cb_selector</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:padding">3dp</item>
+        <item name="android:textColor">@color/cb_color_selector</item>
+    </style>
+
+    <style name="gantta_list_textview">
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/shape_list</item>
+    </style>
+    <style name="title_textview">
+        <!--        <item name="android:ellipsize">end</item>-->
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/shape_list</item>
+        <!--        <item name="android:maxLines">1</item>-->
+    </style>
+
+    <style name="tv_base_title">
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@color/tv_title</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="tv_base_content">
+        <item name="android:background">@drawable/shape_list</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+    <style name="AlertDialogCustom" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">#FFFFFF</item>
+    </style>
+    <style name="PopupWindowAnimation">
+        <item name="android:windowEnterAnimation">@anim/popshow_anim</item>
+        <item name="android:windowExitAnimation">@anim/pophidden_anim</item>
+    </style>
+    <style name="XSpinnerStyle" parent="android:Widget.ListView.DropDown">
+        <!-- 分隔线颜色 -->
+        <item name="android:divider">@color/gray</item>
+        <item name="android:dividerHeight">1dp</item>
+    </style>
+    <style name="pop_anim" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/pop_fade_in_anim</item>
+        <item name="android:windowExitAnimation">@anim/pop_fade_out_anim</item>
+    </style>
+
+    <style name="TabLayoutStyle">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+
+
+</resources>

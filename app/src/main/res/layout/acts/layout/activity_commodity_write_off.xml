@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.jymj.zhglxt.ui.activity.me.CommodityWriteOffActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv_act_commodity_write_off_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:padding="10dp"
+            android:paddingLeft="12dp"
+            android:src="@drawable/back_left_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="7dp"
+            android:text="商品核销"
+            android:textColor="#333333"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_homepage_default_search"
+        android:background="@drawable/bt_actiive_hui"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginRight="37dp"
+        android:layout_height="35dp">
+        <EditText
+            android:id="@+id/et_act_commodity_w_o_hxm"
+            android:textSize="13sp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:hint="请输入核销码"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <!--android:drawableLeft="@drawable/search"-->
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rgp_act_com_w_o"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/rbt_act_com_w_o_ss"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:button="@null"
+            android:background="@drawable/button_selector_ce4a41_kuang"
+            android:checked="true"
+            android:text="搜索"
+            android:textSize="16sp"
+            android:textColor="#CE4A41"/>
+        <RadioButton
+            android:id="@+id/rbt_act_com_w_o_sm"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="25dp"
+            android:gravity="center"
+            android:button="@null"
+            android:background="@drawable/button_selector_ce4a41_kuang"
+            android:text="扫码"
+            android:textSize="16sp"
+            android:textColor="#CE4A41"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll__act_com_w_o"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_act_com_w_o"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            app:tabIndicatorColor="#CE4A41"
+            app:tabIndicatorHeight="2dp"
+            app:tabSelectedTextColor="#CE4A41"
+            app:tabTextColor="@color/black3"
+            app:tabIndicatorFullWidth="false"
+            android:layout_marginTop="60dp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#F3F5FA"/>
+        <!--核销详情-->
+        <RelativeLayout
+            android:id="@+id/ll_act_com_w_o_hxxq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rlv_act_com_w_o_hxxq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </RelativeLayout>
+        <!--核销记录-->
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/rlt_act_com_w_o_hxjl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rlv_act_com_w_o_hxjl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

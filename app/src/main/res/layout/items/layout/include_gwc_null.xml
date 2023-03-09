@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gwc_null_icon"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:gravity="center"
+        android:text="购物车还是空的"
+        android:textSize="16sp"
+        android:textColor="#333333"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="赶紧买点宝贝慰劳下自己吧"
+        android:textSize="13sp"
+        android:textColor="#999999"/>
+
+    <TextView
+        android:id="@+id/tv_gwc_null_qgg"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginBottom="17dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="去逛逛"
+        android:textSize="16sp"
+        android:textColor="#CE4A41"
+        android:background="@drawable/bt_actiive_ce4a41_kuang"/>
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="attrs_info">
+        <attr name="attr_key" format="string"/>
+        <attr name="attr_hint" format="string"/>
+        <attr name="attr_value" format="string"/>
+<!--        控制展示收起-->
+        <attr name="attr_src" format="reference"/>
+        <attr name="attr_name" format="string"/>
+        <attr name="attr_color" format="color"/>
+        <attr name="attr_leftname" format="string"/>
+        <attr name="attr_leftcolor" format="color"/>
+        <attr name="attr_hidename" format="string"/>
+        <attr name="attr_leftsrc" format="reference"/>
+        <attr name="attr_isshow_right" format="boolean"/>
+
+        <attr name="attr_time" format="reference"/>
+        <attr name="attr_arrows" format="reference"/>
+        <attr name="attr_isint" format="boolean"/>
+        <attr name="attr_isfloat" format="boolean"/>
+        <attr name="attr_ischeck" format="boolean"/>
+        <attr name="attr_isleftcheck" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="SizeLimitView">
+        <!--最大高度-->
+        <attr name="maxHeight"  format = "dimension" />
+        <!--宽高比-->
+        <attr name="widthHeightRatio"  format = "float" />
+        <!--是否通过宽度限制高度比率-->
+        <attr name="limitHeightByWidth"  format = "boolean" />
+        <!--是否通过高度限制宽度比率-->
+        <attr name="limitWidthByHeight"  format = "boolean" />
+    </declare-styleable>
+  <!--  <declare-styleable name="attrs_title">
+        <attr name="attr_src" format="reference"/>
+        <attr name="attr_name" format="string"/>
+    </declare-styleable>-->
+</resources>
+<!--
+<attr name = "background" format = "reference" />
+    android:background = "@drawable/图片ID"
+
+<attr name = "textColor" format = "color" />
+    android:textColor = "#00FF00"
+
+<attr name = "focusable" format = "boolean" />
+    android:focusable = "true"
+
+<attr name = "layout_width" format = "dimension" />
+    android:layout_width = "42dp"
+
+<attr name = "fromAlpha" format = "float" />
+    android:fromAlpha = "1.0"
+
+<attr name = "frameDuration" format="integer" />
+    android:frameDuration = "1000"
+
+<attr name = "apiKey" format = "string" />
+    android:apiKey = "defa2312312sdas9uGXCRiS2CGjKO_bc_g"
+
+<attr name = "pivotX" format = "fraction" />
+    android:pivotY = "300%"
+
+<attr name="orientation">
+<enum name="horizontal" value="0" />
+<enum name="vertical" value="1" />
+</attr>-->

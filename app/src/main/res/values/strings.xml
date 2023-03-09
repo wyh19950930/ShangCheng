@@ -1,0 +1,118 @@
+<resources>
+    <!--<string name="app_name">黄村镇综合管理系统</string>-->
+
+    <!--    软件更新弹出框-->
+    <string name="update">更新</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="update_download">下载更新</string>
+    <string name="update_download_content">即将完成更新，请耐心等待</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <!--<string name="hello_blank_fragment">Hello blank fragment</string>-->
+
+    <string name="man">男</string>
+    <string name="woman">女</string>
+    <string name="notwork">无就业</string>
+    <string name="workout">外地就业</string>
+    <string name="workin">村外乡内</string>
+    <string name="workstu">学生</string>
+    <string name="workprestu">学龄前</string>
+    <string name="other">其他</string>
+    <string name="isNong">农户</string>
+    <string name="notNong">非农户</string>
+    <string name="menNum">门牌号  :</string>
+    <string name="noData">未查询到流动人口数据</string>
+    <string name="nameRen">姓名</string>
+    <string name="sexRen">性别</string>
+    <string name="nation">民族</string>
+    <string name="birth">出生</string>
+    <string name="address">住址</string>
+    <string name="time">录入时间</string>
+    <string name="idcard">公民身份号码</string>
+    <string name="ageRen">年龄</string>
+    <string name="relRen">与户主关系</string>
+    <string name="huRen">户籍性质</string>
+    <string name="pidRen">身份证号</string>
+    <string name="workRen">就业情况</string>
+
+    <string name="zxqpg">土地征收</string>
+    <string name="cmzzl">自主上楼</string>
+    <string name="mlxc">美丽乡村</string>
+    <string name="cun_cesuan">是否对各村进行测算？</string>
+    <string name="ceSuanTable">测算表</string>
+    <string name="rebuildListTable">项目表</string>
+    <string name="rebuildInfo">项目基本信息</string>
+    <string name="rebuildFirst">施工方信息</string>
+    <string name="rebuildSecond">施工信息补充</string>
+    <string name="rebuildThird">提交验收申请</string>
+    <string name="rebuildFinal">备案完成</string>
+    <string name="ylByCunTable">各村基本数据</string>
+
+    <string name="zhaiDx">宅基地大小</string>
+    <string name="zhaiCount">宗数</string>
+    <string name="zhaiPercent">占比</string>
+    <string name="zdMj">占地面积(亩)</string>
+    <string name="jianZhuMj">建筑面积(m²)</string>
+    <string name="avgMj">户均建筑面积(m²)</string>
+    <!-- 基础数据表-->
+    <string name="basedata">现状主要数据</string>
+
+    <string name="rkdata">人口现状</string>
+    <string name="rkHuShu">户数</string>
+    <string name="rkNong">农业人口</string>
+    <string name="rkFeiNong">非农业人口</string>
+    <string name="rkJingJi">经济成员</string>
+    <string name="heJi">合计</string>
+
+    <string name="landdata">土地权属与现状地类（单位：万m²）</string>
+    <string name="landdataJiTi">集体土地</string>
+    <string name="landdataGuoYou">国有土地</string>
+    <string name="landdataJianShe">建设用地</string>
+    <string name="landdataNongYong">农用地</string>
+    <string name="landdataGengDi">其中耕地</string>
+    <string name="landdataUnuse">未利用地</string>
+
+    <string name="buildingdata">现状建筑物（单位：万m²）</string>
+    <string name="buildingZongShu">宗数</string>
+    <string name="buildingZhanDi">占地面积</string>
+    <string name="buildingNum">建筑量</string>
+    <string name="buildingCash">租金</string>
+    <string name="buildingZhai">宅基地</string>
+    <string name="buildingJiTi">集体物业</string>
+
+    <string name="rebuilddata">改造补偿基本情况（单位：万m²）</string>
+    <string name="rebuildJiShu">基数</string>
+    <string name="rebuildGuiHua">规划住宅建筑面积</string>
+    <string name="rebuildPengGai">土地征收</string>
+    <string name="rebuildZiZhu">自主上楼</string>
+    <string name="rebuildMeiLi">美丽乡村</string>
+
+    <string name="landvalue">土地价值</string>
+    <string name="landvalueMuBiao">目标值</string>
+    <string name="landvalueBiZhun">比准值</string>
+    <string name="landvalueQuWei">地价区位</string>
+    <string name="landvalueFangJia">现值房价</string>
+    <string name="landvalueJiZhun">基准地价</string>
+    <string name="landvalueKeShiXian">可实现地价</string>
+    <string name="landvalueShiXian">实现地价</string>
+
+    <string name="landuse">用地数据（单位：万m²）</string>
+    <string name="landuseYongDi">用地面积</string>
+    <string name="landuseJianSheLiang">建设量</string>
+    <string name="landuseRongJiLv">容积率</string>
+    <string name="landuseFenLei">分类</string>
+    <string name="landuseJiBen">基本情况</string>
+    <string name="landuseJuZhu">居住</string>
+    <string name="landusePingHeng">平衡资金</string>
+
+    <string name="count">序号</string>
+    <string name="project">项目</string>
+    <string name="quantitie">工程量</string>
+    <string name="unit">单位</string>
+    <string name="bilprice">单价</string>
+    <string name="quaunit">单位</string>
+    <string name="sumcost">总计（万元）</string>
+
+
+</resources>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.jymj.zhglxt">
+
+    <!-- 允许程序打开网络套接字 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 允许程序设置内置sd卡的写权限 -->
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 允许程序获取网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 允许程序访问WiFi网络信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 允许程序读写手机状态和身份 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- 允许程序访问CellID或WiFi热点来获取粗略的位置 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- 安装权限 -->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" /> <!-- 华为角标 -->
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" /> <!-- Optional for location -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> <!-- 用于开启 debug 版本的应用在6.0 系统上 层叠窗口权限 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" /> <!-- Android Q后台定位权限 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
+    <uses-permission android:name="${applicationId}.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+    <uses-permission android:name="android.permission.INTENT" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission
+        android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+    <!--
+     <queries>
+        <package android:name="com.tencent.mm" />            &lt;!&ndash;// 指定微信包名&ndash;&gt;
+        <package android:name="com.tencent.mobileqq" />    &lt;!&ndash;//指定qq包名&ndash;&gt;
+        <package android:name="com.sina.weibo" />            &lt;!&ndash; //指定微博包名&ndash;&gt;
+        <package android:name="com.tencent.wework" />      &lt;!&ndash;//指定企业微信包名&ndash;&gt;
+        <package android:name="com.qzone" />                   &lt;!&ndash;//指定QQ空间包名&ndash;&gt;
+        <package android:name="com.alibaba.android.rimet" /> &lt;!&ndash;// 指定钉钉包名&ndash;&gt;
+        <package android:name="com.eg.android.AlipayGphone" /> &lt;!&ndash;// 指定支付宝包名&ndash;&gt;
+        <package android:name="com.instagram.android" />         &lt;!&ndash;// 指定instagram包名&ndash;&gt;
+        <package android:name="com.ss.android.ugc.aweme" />  &lt;!&ndash;// 指定抖音包名&ndash;&gt;
+
+    </queries>
+    -->
+    <application
+        android:name=".app.AppApplication"
+        android:allowBackup="true"
+        android:icon="${appicon}"
+        android:label="${appname}"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NewBzcGlxy"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:icon,android:label,android:theme">
+        <activity
+            android:name=".ui.activity.me.order.OrderCenterActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".ui.activity.me.WlxqActivity" />
+        <activity
+            android:name=".ui.activity.me.CouponActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".ui.activity.shopping.DdqrActivity"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".ui.activity.homepage.SpflActivity" />
+        <activity
+            android:name=".ui.activity.homepage.ShouSearchActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".ui.activity.shopping.CommodityDetailsActivity" /> <!-- androidx.core.content.FileProvider -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".login.activity.LoginActivity"
+            android:exported="false" /> <!-- true -->
+        <!-- bd5a0b4cdab024e4fb67acf2aadacbff -->
+        <activity android:name=".ui.activity.FirstActivity" />
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="${amapkey}" />
+
+        <service android:name="com.amap.api.location.APSService" />
+        <!-- 二维码扫描 设置竖屏显示 -->
+        <activity
+            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+            android:screenOrientation="portrait"
+            tools:replace="screenOrientation" />
+        <activity
+            android:name=".login.activity.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Launcher"
+            tools:ignore="DuplicateActivity">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="um.63ab9aa7d64e6861390819d7" />
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="22" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.me.address.DzglActivity" />
+        <activity android:name=".ui.activity.me.address.DzglAddActivity" />
+        <activity android:name=".ui.activity.me.address.DzglSelectActivity" />
+
+        <!-- 友盟微信 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="63ab9aa7d64e6861390819d7" />
+
+        <activity android:name=".ui.activity.me.order.OrderDetailsActivity" />
+        <activity android:name=".ui.activity.shopping.FillMemberInfoActivity" />
+        <activity android:name=".ui.activity.me.order.WriteOffActivity" />
+        <activity android:name=".ui.activity.me.CommodityWriteOffActivity" />
+        <activity android:name=".ui.activity.me.order.WriteOffQrCodeActivity" />
+        <activity android:name=".ui.activity.me.tuikuan.RetreatActivity" />
+        <activity android:name=".ui.activity.me.tuikuan.AfterSalesActivity"></activity>
+    </application>
+
+</manifest>

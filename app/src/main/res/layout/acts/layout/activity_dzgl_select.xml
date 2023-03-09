@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:sothree="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.jymj.zhglxt.ui.activity.me.address.DzglSelectActivity">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/iv_act_dzgl_select_back"
+            android:padding="15dp"
+            android:src="@drawable/back_left_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textSize="18sp"
+            android:textColor="@color/black3"
+            android:gravity="center"
+            android:text="所在地区"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+        <Button
+            android:id="@+id/iv_act_dzgl_select_confirm"
+            android:text="确定"
+            android:textSize="13sp"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bt_actiive_01ba76"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="15dp"/>
+
+    </RelativeLayout>
+
+    <com.sothree.slidinguppanel.SlidingUpPanelLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        sothree:umanoPanelHeight="0dp"
+        sothree:umanoShadowHeight="4dp"
+        app:umanoAnchorPoint="0.39"
+        app:umanoFadeColor="#00ffffff"
+        android:gravity="bottom"
+        sothree:umanoOverlay="true"
+        android:background="@color/white"
+        android:id="@+id/supl_act_dzgl_select_search">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.amap.api.maps2d.MapView
+                android:id="@+id/map_act_dzgl_select"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <RelativeLayout
+                android:padding="5dp"
+                android:id="@+id/rl_act_dzgl_location"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="42dp"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/mapback"
+                android:transitionName="location"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <!--            android:onClick="showMyLocation"-->
+                <ImageButton
+                    android:id="@+id/bt_act_dzgl_location"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/button_selector"
+                    android:padding="4dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/login_home" />
+            </RelativeLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:background="@drawable/bt_actiive_hui"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp">
+                    <MultiAutoCompleteTextView
+                        android:textSize="13sp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:id="@+id/mactv_act_dzgl_select_search"
+                        android:drawablePadding="5dp"
+                        android:drawableLeft="@drawable/search"
+                        android:paddingLeft="20dp"
+                        android:hint="搜索地点"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"/>
+                    <ImageView
+                        android:visibility="gone"
+                        android:id="@+id/tv_act_dzgl_select_search_delete"
+                        android:paddingRight="10dp"
+                        android:src="@drawable/error_center_x"
+                        android:layout_width="25dp"
+                        android:layout_height="15dp"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/tv_act_dzgl_select_search_qx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_gravity="center"
+                    android:text="取消"
+                    />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:descendantFocusability="blocksDescendants"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rlv_act_dzgl_select_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </com.sothree.slidinguppanel.SlidingUpPanelLayout>
+
+
+
+</LinearLayout>

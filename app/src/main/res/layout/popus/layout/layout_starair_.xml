@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+<!--    <ImageView
+        android:background="#000000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>-->
+
+<!--    5000dp-->
+    <com.jymj.zhglxt.widget.gxt.LineConcentView
+        android:id="@+id/ShaderImageView"
+        android:layout_width="5000dp"
+        android:layout_height="5000dp" />
+
+
+    <FrameLayout
+        android:id="@+id/layouPoints"
+        android:layout_width="5000dp"
+        android:layout_height="5000dp"
+        android:layout_gravity="center_vertical" />
+    <com.jymj.zhglxt.widget.gxt.WaveView
+        android:id="@+id/waveView"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_centerInParent="true"
+        />
+
+    <com.jymj.zhglxt.widget.gxt.CircleImageView
+        android:id="@+id/image_theOne"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop"
+        />
+
+
+</RelativeLayout>

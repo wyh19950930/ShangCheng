@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="7.5dp"
+            android:layout_marginBottom="7.5dp"
+            android:minHeight="80dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iv_item_wlxq_img"
+                android:src="@drawable/yuan_shi_red"
+                android:layout_width="18dp"
+                android:layout_height="18dp"/>
+            <View
+                android:layout_marginTop="5dp"
+                android:id="@+id/view_item_wlxq_line"
+                android:background="@color/gray"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="13dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/iv_item_wlxq_yxd"
+                android:textSize="14sp"
+                android:textColor="@color/black3"
+                android:layout_marginTop="7.5dp"
+                android:text="已下单"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv_item_wlxq_content"
+                android:textSize="14sp"
+                android:textColor="@color/black3"
+                android:layout_marginTop="5dp"
+                android:text="您的订单已由快递驿站代收。如有疑问你可以联系配送员【吕杰瑞，1556652415】"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tv_item_wlxq_time"
+                android:textSize="14sp"
+                android:textColor="#999999"
+                android:layout_marginTop="5dp"
+                android:text="2065 - 11 - 10 15:56"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

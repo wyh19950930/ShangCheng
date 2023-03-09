@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center">
+    <LinearLayout
+        android:layout_margin="2dp"
+        android:orientation="vertical"
+        android:layout_width="100dp"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/iv_item_ddqr_sgwq_img"
+            android:src="@drawable/icon_cnxh_ys"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+        <TextView
+            android:id="@+id/tv_item_ddqr_sgwq_title"
+            android:text="童话森林门"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="3dp"
+            android:textSize="10sp"
+            android:textColor="#424242"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:singleLine="true"/>
+    </LinearLayout>
+</LinearLayout>

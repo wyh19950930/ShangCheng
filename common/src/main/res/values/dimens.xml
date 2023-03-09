@@ -1,0 +1,8 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <!-- font -->
+    <dimen name="font_normal">14sp</dimen>
+
+</resources>

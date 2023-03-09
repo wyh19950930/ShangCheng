@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/act_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".login.activity.LoginActivity">
+    <ImageView
+        android:id="@+id/im_act_top"
+        android:background="@drawable/bl_login"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="183.5dp"/>
+    <View
+        android:visibility="invisible"
+        android:id="@+id/iv_act_login_bzc"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="32dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+
+    <TextView
+        android:id="@+id/tv_act_login_title1"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="27sp"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="61.5dp"
+        app:layout_constraintTop_toBottomOf="@+id/iv_act_login_bzc"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="黄山店"/>
+<!--    智慧城镇系统-->
+    <TextView
+        android:id="@+id/tv_act_login_title2"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="62.5dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_act_login_title1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome"/>
+    <TextView
+        android:id="@+id/tv_act_login_title3"
+        android:textColor="#333333"
+        android:textSize="23sp"
+        android:layout_marginLeft="62.5dp"
+        app:layout_constraintTop_toBottomOf="@+id/im_act_top"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="欢迎登录"/>
+
+
+
+    <!--<androidx.constraintlayout.widget.Guideline
+        android:id="@+id/hor_gl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5"/>-->
+
+    <LinearLayout
+        android:id="@+id/ll_user"
+        android:orientation="vertical"
+        android:layout_marginTop="35dp"
+        app:layout_constraintBottom_toTopOf="@+id/ll_remember"
+        app:layout_constraintTop_toBottomOf="@+id/tv_act_login_title3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="68dp"
+        android:layout_marginRight="67dp">
+        <LinearLayout
+            android:background="@drawable/shape_login"
+            android:id="@+id/ll_username_act_login"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgv_uname"
+                android:transitionName="uname"
+                android:layout_width="15dp"
+                android:layout_height="17dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/username_login"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="5dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="   ">
+
+                <EditText
+                    android:hint="请输入用户名/手机号"
+                    android:id="@+id/edt_username_act_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:background="@null"
+                    android:inputType="text"
+                    android:text="sc"
+                    android:layout_marginLeft="10dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="19.5dp"
+            android:id="@+id/ll_password_act_login"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/shape_login"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="17dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/password_login"
+                android:layout_marginLeft="5dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="   "
+                >
+                <!--android:paddingEnd="10dp"
+                app:passwordToggleEnabled="true"
+                android:paddingRight="10dp"-->
+                <EditText
+                    android:hint="请输入密码"
+                    android:id="@+id/edt_password_act_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:background="@null"
+                    android:text="sc123"
+                    android:inputType="textPassword"
+                    android:layout_marginLeft="10dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_remember"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/rl_btns"
+        app:layout_constraintTop_toBottomOf="@+id/ll_user">
+
+        <CheckBox
+            android:layout_gravity="center_vertical"
+            android:id="@+id/cb_act_login"
+            style="@style/CustomCheckboxTheme"
+            android:checked="true"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_marginStart="68dp"
+            android:layout_marginLeft="35dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:gravity="center_vertical"
+            android:text="记住密码"
+            android:layout_marginLeft="10dp" />
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_modify_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="61dp"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:text="修改密码?"
+            android:textColor="@color/login_jzmm_color" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_btns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alwaysDrawnWithCache="true"
+        android:layout_marginTop="60dp"
+        android:paddingStart="68dp"
+        android:paddingEnd="67dp"
+        app:layout_constraintTop_toBottomOf="@+id/ll_remember">
+
+        <com.dd.processbutton.iml.ActionProcessButton
+            android:id="@+id/bt_login_act_login"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_centerHorizontal="true"
+            android:focusableInTouchMode="false"
+            android:onClick="doLogin"
+            android:text="登录"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            custom:pb_colorComplete="@color/green_complete"
+            custom:pb_colorError="@color/red_error"
+            custom:pb_colorNormal="@color/login_color"
+            custom:pb_colorPressed="@color/login_color"
+            custom:pb_colorProgress="@color/purple_progress"
+            custom:pb_cornerRadius="5dp"
+            custom:pb_textComplete="请确认指纹"
+            custom:pb_textError="登录失败"
+            custom:pb_textProgress="登录中" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/iv_wx_login"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_wx"
+        app:layout_constraintTop_toBottomOf="@+id/rl_btns"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

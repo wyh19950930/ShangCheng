@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/ll_item_spfl_left"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <View
+            android:id="@+id/view_item_spfl_left"
+            android:background="#CE4A41"
+            android:layout_width="5dp"
+            android:layout_height="20dp"/>
+        <TextView
+            android:id="@+id/tv_item_spfl_left_name"
+            android:gravity="center"
+            android:text="乡食"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>
